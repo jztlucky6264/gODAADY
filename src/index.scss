@@ -1,0 +1,251 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+.nav_div1 {
+  margin: 0rem 4rem;
+}
+.nav1_div2 {
+  margin: 0rem 4rem;
+}
+
+.input-group {
+  background-color: yellow;
+  width: 90vw;
+  margin: 2rem 2.5rem;
+  .input_width {
+    width: 94vh;
+  }
+
+  .form-control {
+    height: 10vh;
+    font-family: Poppins;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  button {
+    background-color: #00838c;
+    color: white;
+    width: 10vw;
+    .search_icon {
+      font-size: 2rem;
+    }
+  }
+  input {
+    border: 0;
+    background-color: #d4dbe0;
+    color: #000;
+    padding-left: 2rem;
+  }
+  .domain_div {
+    padding-left: 2.6rem;
+    margin-top: 3rem;
+    span {
+      font-size: 0.8rem;
+    }
+  }
+}
+.poster_div {
+  background-color: #d4dbe0;
+  min-height: 65vh;
+  .poster_content {
+    line-height: 3rem;
+    text-align: center;
+    display: flex;
+    padding-top: 4rem;
+    justify-content: space-evenly;
+    flex-direction: row;
+    .left_side {
+      margin-right: 8rem;
+    }
+    h2 {
+      font-weight: bold;
+      font-size: 1rem;
+      margin-top: -2rem;
+      margin-bottom: 2rem;
+    }
+    h3 {
+      font-weight: 800;
+      font-size: 3.5rem;
+      font-family: Fredoka One;
+      letter-spacing: -0.01em;
+    }
+    .btn {
+      max-width: 30vh;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 1.2rem;
+      font-family: Balsamiq Sans;
+      border-radius: 0;
+      padding: 0.7rem 2rem;
+      background: #000;
+      box-shadow: none;
+      color: #fff;
+    }
+  }
+}
+.table_div {
+  margin: 2rem auto;
+
+  .row {
+    height: 35vh;
+  }
+  .col-3 {
+    border: 1px solid #d6d6d6;
+    p {
+      text-align: center;
+      margin-top: 2rem;
+    }
+  }
+  .col-4 {
+    border: 1px solid #d6d6d6;
+    text-align: center;
+    h1 {
+      margin-top: 2rem;
+    }
+    p {
+      margin-top: 1rem;
+    }
+  }
+}
+.poster1_div {
+  width: 100%;
+  background-color: #0b3354;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    height: 70%;
+    width: 90%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .right_side {
+    margin-top: 6rem;
+    color: #ffff;
+
+    h2 {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+      margin-top: -6rem;
+    }
+    h3 {
+      font-size: 3rem;
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .btn {
+      width: 60%;
+      height: 20%;
+      background-color: #fff;
+      border-radius: 0;
+      font-size: 1rem;
+      font-weight: bold;
+      padding: 1rem 2rem;
+    }
+  }
+}
+
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 768px) {
+  .poster_div {
+    .poster_content {
+      h3 {
+        font-size: 2.5rem;
+      }
+    }
+  }
+  .table_div {
+    .col-lg-2 {
+      margin-top: 2.7rem;
+      p {
+        margin-top: 0rem;
+      }
+    }
+  }
+  .poster1_div {
+    .right_side {
+      h3 {
+        font-size: 2rem;
+      }
+      .btn {
+        width: 60%;
+        height: 15%;
+        font-size: 0.6rem;
+        margin-bottom: 1rem;
+        span {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 992px) {
+  .domain_div {
+    display: none;
+  }
+  .input-group {
+    input {
+      width: 180vh;
+    }
+  }
+  .table_div {
+    margin-bottom: 12rem;
+  }
+  .poster_content {
+    .btn {
+      margin-bottom: 4rem;
+      span {
+        display: none;
+      }
+    }
+  }
+  .nav1_div2 {
+    span {
+      display: none;
+    }
+    .nav_icon {
+      margin-left: 1rem;
+      display: block;
+    }
+    .nav_icon2 {
+      margin-left: 1rem;
+      margin-top: -2rem;
+    }
+  }
+}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .poster_content {
+    .btn {
+      margin-bottom: 2rem;
+      span {
+        display: none;
+      }
+    }
+  }
+  .nav1_div2 {
+    span {
+      display: block;
+    }
+    .nav_icon {
+      display: none;
+    }
+  }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+//@media (min-width: 1200px) { ... }
+
+// XX-Large devices (larger desktops, 1400px and up)
+//@media (min-width: 1400px) { ... }
