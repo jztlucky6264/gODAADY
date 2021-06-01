@@ -4,7 +4,7 @@ import SearchIcon from "@material-ui/icons/Search";
 const Navbar2 = () => {
   return (
     <>
-      <div className="input-group  ">
+      <div className="input-group input_div ">
         <div className="input-group mb-3 input_width">
           <input
             type="text"

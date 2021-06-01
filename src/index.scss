@@ -98,7 +98,7 @@
       margin-top: 2rem;
     }
   }
-  .col-4 {
+  .col-12 {
     border: 1px solid #d6d6d6;
     text-align: center;
     h1 {
@@ -111,6 +111,7 @@
 }
 .poster1_div {
   width: 100%;
+  height: 60vh;
   background-color: #0b3354;
   margin-bottom: 4rem;
   display: flex;
@@ -131,7 +132,7 @@
     h2 {
       font-size: 1rem;
       margin-bottom: 2rem;
-      margin-top: -6rem;
+      margin-top: -4rem;
     }
     h3 {
       font-size: 3rem;
@@ -153,17 +154,52 @@
 
 // X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap
-
+@media (max-width: 576px) {
+  .poster_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .right_side {
+      display: none;
+    }
+    .left_side {
+      margin-left: 7rem;
+    }
+  }
+  .table_div {
+    .row_div {
+      margin: 0 2rem;
+      p {
+        font-size: 0.6rem;
+        font-weight: bold;
+      }
+      .col-lg-2 {
+        margin-top: 2.7rem !important;
+        display: none !important;
+      }
+    }
+  }
+}
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 768px) {
   .poster_div {
+    flex-direction: column;
     .poster_content {
+      h2 {
+        margin-top: 8rem;
+      }
       h3 {
-        font-size: 2.5rem;
+        font-size: 2rem;
+      }
+      .btn {
+        font-size: 0.9rem;
       }
     }
   }
   .table_div {
+    .row {
+      height: 44vh;
+    }
     .col-lg-2 {
       margin-top: 2.7rem;
       p {
@@ -178,9 +214,9 @@
       }
       .btn {
         width: 60%;
-        height: 15%;
+        height: 10%;
         font-size: 0.6rem;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
         span {
           display: none;
         }

@@ -126,21 +126,22 @@
   margin-top: 2rem;
 }
 
-.table_div .col-4 {
+.table_div .col-12 {
   border: 1px solid #d6d6d6;
   text-align: center;
 }
 
-.table_div .col-4 h1 {
+.table_div .col-12 h1 {
   margin-top: 2rem;
 }
 
-.table_div .col-4 p {
+.table_div .col-12 p {
   margin-top: 1rem;
 }
 
 .poster1_div {
   width: 100%;
+  height: 60vh;
   background-color: #0b3354;
   margin-bottom: 4rem;
   display: -webkit-box;
@@ -173,7 +174,7 @@
 .poster1_div .right_side h2 {
   font-size: 1rem;
   margin-bottom: 2rem;
-  margin-top: -6rem;
+  margin-top: -4rem;
 }
 
 .poster1_div .right_side h3 {
@@ -192,9 +193,55 @@
   padding: 1rem 2rem;
 }
 
+@media (max-width: 576px) {
+  .poster_div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .poster_div .right_side {
+    display: none;
+  }
+  .poster_div .left_side {
+    margin-left: 7rem;
+  }
+  .table_div .row_div {
+    margin: 0 2rem;
+  }
+  .table_div .row_div p {
+    font-size: 0.6rem;
+    font-weight: bold;
+  }
+  .table_div .row_div .col-lg-2 {
+    margin-top: 2.7rem !important;
+    display: none !important;
+  }
+}
+
 @media (max-width: 768px) {
+  .poster_div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .poster_div .poster_content h2 {
+    margin-top: 8rem;
+  }
   .poster_div .poster_content h3 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+  }
+  .poster_div .poster_content .btn {
+    font-size: 0.9rem;
+  }
+  .table_div .row {
+    height: 44vh;
   }
   .table_div .col-lg-2 {
     margin-top: 2.7rem;
@@ -207,9 +254,9 @@
   }
   .poster1_div .right_side .btn {
     width: 60%;
-    height: 15%;
+    height: 10%;
     font-size: 0.6rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
   .poster1_div .right_side .btn span {
     display: none;
