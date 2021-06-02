@@ -14,13 +14,14 @@
 }
 
 .input-group {
-  background-color: yellow;
+  position: relative;
   width: 90vw;
   margin: 2rem 2.5rem;
 }
 
 .input-group .input_width {
-  width: 94vh;
+  position: relative;
+  width: 100vh;
 }
 
 .input-group .form-control {
@@ -57,6 +58,7 @@
 }
 
 .poster_div {
+  position: relative;
   background-color: #d4dbe0;
   min-height: 65vh;
 }
@@ -110,6 +112,7 @@
 }
 
 .table_div {
+  position: relative;
   margin: 2rem auto;
 }
 
@@ -140,7 +143,8 @@
 }
 
 .poster1_div {
-  width: 100%;
+  position: relative;
+  width: 100vw;
   height: 60vh;
   background-color: #0b3354;
   margin-bottom: 4rem;
@@ -194,16 +198,53 @@
 }
 
 @media (max-width: 576px) {
-  .poster_div {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  .input_div {
+    width: 60vh !important;
+  }
+  .input_div .input_width input {
+    font-size: 1rem !important;
+  }
+  .input_div .input_width button {
+    width: 10vh;
+  }
+  .poster1_div {
+    height: -webkit-max-content !important;
+    height: -moz-max-content !important;
+    height: max-content !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    max-width: 100vw !important;
+  }
+  .poster1_div img {
+    height: 70%;
+    width: 90%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 1.3rem !important;
+  }
+  .poster1_div .right_side {
+    text-align: center;
+  }
+  .poster1_div .right_side h3 {
+    font-size: 1.5rem !important;
+  }
+  .poster1_div .right_side .btn {
+    height: 6vh !important;
+    width: 35vh !important;
+    padding-bottom: 2rem;
+    font-weight: bold !important;
+    font-size: 1rem !important;
   }
   .poster_div .right_side {
     display: none;
@@ -212,7 +253,10 @@
     margin-left: 7rem;
   }
   .table_div .row_div {
-    margin: 0 2rem;
+    margin: 0 0.5rem !important;
+  }
+  .table_div .row_div .col-3 {
+    padding: 1rem auto !important;
   }
   .table_div .row_div p {
     font-size: 0.6rem;

@@ -14,7 +14,8 @@ const Poster1 = () => {
         <div className="right_side">
           <h2>GoDaddy Pro Contest</h2>
           <h3>
-            Get a .com for <span class="no-wrap-text"> ₹199.00*</span>/1st yr.
+            Get a .com for <span className="no-wrap-text"> ₹199.00*</span>/1st
+            yr.
           </h3>
           <p>Grab the world's most popular domain.</p>
           <button className="btn" type="button">

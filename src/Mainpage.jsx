@@ -9,7 +9,8 @@ const Mainpage = () => {
           <div className="left_side">
             <h2>Domain Names</h2>
             <h3>
-              Get a .com for <span class="no-wrap-text"> ₹199.00*</span>/1st yr.
+              Get a .com for <span className="no-wrap-text"> ₹199.00*</span>/1st
+              yr.
             </h3>
             <p>Grab the world's most popular domain.</p>
             <button className="btn" type="button">
@@ -20,7 +21,8 @@ const Mainpage = () => {
             <h2>Web Hosting</h2>
 
             <h3>
-              Get a .com for <span class="no-wrap-text"> ₹199.00*</span>/1st yr.
+              Get a .com for <span className="no-wrap-text"> ₹199.00*</span>/1st
+              yr.
             </h3>
             <p>Grab the world's most popular domain.</p>
             <button className="btn" type="button">

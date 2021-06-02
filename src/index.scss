@@ -11,11 +11,13 @@
 }
 
 .input-group {
-  background-color: yellow;
+  position: relative;
+
   width: 90vw;
   margin: 2rem 2.5rem;
   .input_width {
-    width: 94vh;
+    position: relative;
+    width: 100vh;
   }
 
   .form-control {
@@ -47,6 +49,7 @@
   }
 }
 .poster_div {
+  position: relative;
   background-color: #d4dbe0;
   min-height: 65vh;
   .poster_content {
@@ -86,6 +89,7 @@
   }
 }
 .table_div {
+  position: relative;
   margin: 2rem auto;
 
   .row {
@@ -110,7 +114,8 @@
   }
 }
 .poster1_div {
-  width: 100%;
+  position: relative;
+  width: 100vw;
   height: 60vh;
   background-color: #0b3354;
   margin-bottom: 4rem;
@@ -155,10 +160,46 @@
 // X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap
 @media (max-width: 576px) {
+  .input_div {
+    width: 60vh !important;
+    .input_width {
+      input {
+        font-size: 1rem !important;
+      }
+      button {
+        width: 10vh;
+      }
+    }
+  }
+  .poster1_div {
+    height: max-content !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    max-width: 100vw !important;
+    img {
+      height: 70%;
+      width: 90%;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+      margin-left: 1.3rem !important;
+    }
+    .right_side {
+      text-align: center;
+      h3 {
+        font-size: 1.5rem !important;
+      }
+      .btn {
+        height: 6vh !important;
+        width: 35vh !important;
+        padding-bottom: 2rem;
+        font-weight: bold !important;
+        font-size: 1rem !important;
+      }
+    }
+  }
   .poster_div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     .right_side {
       display: none;
     }
@@ -168,7 +209,10 @@
   }
   .table_div {
     .row_div {
-      margin: 0 2rem;
+      margin: 0 0.5rem !important;
+      .col-3 {
+        padding: 1rem auto !important;
+      }
       p {
         font-size: 0.6rem;
         font-weight: bold;

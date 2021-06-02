@@ -8,13 +8,13 @@ const Navbar2 = () => {
         <div className="input-group mb-3 input_width">
           <input
             type="text"
-            class="form-control "
+            className="form-control "
             placeholder="Find your perfect domain"
             aria-label="Recipient's username"
             aria-describedby="button-addon2"
           />
           <button
-            class="btn btn-outline-secondary"
+            className="btn btn-outline-secondary"
             type="button"
             id="button-addon2"
           >

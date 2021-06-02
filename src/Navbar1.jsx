@@ -41,7 +41,7 @@ const Navbar1 = () => {
                 </a>
               </li>
               <li className="nav-item me-2">
-                <a className="nav-link" href="#" tabindex="-1">
+                <a className="nav-link" href="#" tabIndex="-1">
                   More
                 </a>
               </li>
@@ -69,12 +69,12 @@ const Navbar1 = () => {
               </a>
             </li>
             <li className="nav-item me-4">
-              <a className="nav-link" href="#" tabindex="-1">
+              <a className="nav-link" href="#" tabIndex="-1">
                 <span>Sign In</span>
               </a>
             </li>
             <li className="nav-item me-3">
-              <a className="nav-link" href="#" tabindex="-1">
+              <a className="nav-link" href="#" tabIndex="-1">
                 <ShoppingCartIcon className="nav_icon2" />
               </a>
             </li>
