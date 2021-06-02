@@ -7,7 +7,7 @@ import PermIdentityIcon from "@material-ui/icons/PermIdentity";
 const Navbar1 = () => {
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-light  mt-3">
+      <nav className="navbar navbar-expand-lg  navbar-light  mt-3">
         <div className="container-fluid nav_div1 ">
           <a className="navbar-brand" href="#">
             <AdbIcon className="company_brand fs-1" />

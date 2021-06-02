@@ -1,15 +1,22 @@
+body {
+  overflow-x: hidden;
+}
+
 * {
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
 }
-.nav_div1 {
-  margin: 0rem 4rem;
+nav {
+  width: 100vw;
+  .nav_div1 {
+    width: 98vw;
+    margin: 0rem 4rem;
+  }
+  .nav1_div2 {
+    margin: 0rem 4rem;
+  }
 }
-.nav1_div2 {
-  margin: 0rem 4rem;
-}
-
 .input-group {
   position: relative;
 
@@ -53,6 +60,7 @@
   position: relative;
   background-color: #d4dbe0;
   min-height: 65vh;
+  width: 100vw;
   .poster_content {
     line-height: 3rem;
     text-align: center;
@@ -115,7 +123,7 @@
       margin-top: 2rem;
     }
   }
-  .col-12 {
+  .col-4 {
     border: 1px solid #d6d6d6;
     text-align: center;
     h1 {
@@ -129,7 +137,7 @@
 .poster1_div {
   position: relative;
   width: 100vw;
-  height: 60vh;
+  height: max-content;
   background-color: #0b3354;
   margin-bottom: 4rem;
   display: flex;
@@ -172,8 +180,80 @@
 
 // X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap
+@media (max-width: 360px) {
+  .input_div {
+    .form-control {
+      position: relative !important;
+      height: 10vh !important;
+    }
+    .btn {
+      height: 10vh !important;
+    }
+  }
+  .table_div {
+    height: max-content !important;
+    margin-bottom: 15rem;
+    .row {
+      height: 30vh !important;
+      .row_div {
+        width: 50vh;
+        p {
+          line-height: 1rem;
+          word-wrap: break-word;
+          font-size: 0.8rem;
+          font-weight: 350;
+        }
+      }
+    }
+    .col-4 {
+      margin-left: 1.27rem;
+      margin-top: 2.2rem;
+      height: 20vh;
+      width: 15vh;
+      h1 {
+        font-size: 1.2rem;
+      }
+      p {
+        font-weight: 350;
+        font-size: 0.8rem;
+        margin-top: 0rem;
+      }
+    }
+  }
+  .poster1_div {
+    img {
+      padding-left: 2rem !important;
+    }
+  }
+}
+@media (max-width: 640px) {
+  .poster_div {
+    position: relative !important;
+    .poster_content {
+      .btn {
+        font-size: 0.7rem !important;
+        margin-bottom: 4rem !important;
+        width: 80vh;
+      }
+    }
+  }
+  .table_div {
+    position: relative !important;
+    height: 100vh;
+  }
+  .col-4 {
+    position: relative !important;
+    margin-top: 10.5rem;
+    margin-bottom: 2rem;
+  }
+  .poster1_div {
+    position: relative !important;
+  }
+}
+
 @media (max-width: 576px) {
   .input_div {
+    position: relative;
     width: 54vh;
     margin-left: -0.5rem !important;
     .input_width {
@@ -182,24 +262,21 @@
         font-size: 0.8rem !important;
       }
       button {
+        position: relative;
         width: 10vh;
       }
     }
   }
   .poster1_div {
+    position: relative;
+
     height: max-content !important;
     display: flex !important;
     flex-direction: column !important;
     justify-content: center !important;
     align-items: center !important;
     width: 100vw !important;
-    img {
-      height: 60%;
-      width: 80%;
-      margin-top: 3rem;
-      margin-bottom: 3rem;
-      margin-left: 1.3rem !important;
-    }
+
     .right_side {
       text-align: center;
       h3 {
@@ -215,6 +292,7 @@
     }
   }
   .poster_div {
+    position: relative;
     .right_side {
       display: none;
     }
@@ -223,6 +301,7 @@
     }
   }
   .table_div {
+    position: relative;
     .row_div {
       position: relative;
       margin: 0 0.5rem !important;
@@ -234,6 +313,7 @@
         font-weight: bold;
       }
       .col-lg-2 {
+        display: block !important;
         position: relative;
         margin-top: 2.7rem !important;
         display: none !important;
@@ -243,12 +323,22 @@
 }
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 768px) {
+  .input_div {
+    .form-control {
+      position: relative !important;
+      height: 15vh;
+    }
+    .btn {
+      position: relative !important;
+      height: 15vh;
+    }
+  }
   .poster_div {
     width: 100vw;
     flex-direction: column;
     .poster_content {
       h2 {
-        margin-top: 8rem;
+        margin-top: 3rem;
       }
       h3 {
         font-size: 2rem;
@@ -258,19 +348,25 @@
       }
     }
   }
-  .table_div {
+  /*.table_div {
     .row {
-      height: 44vh;
+      height: 40vh;
     }
-    .col-lg-2 {
+    .col-12 {
+      height: 40vh !important;
+      position: relative !important;
       width: 100vw;
-      margin-top: 2.7rem;
+      margin-top: 5rem;
+      margin-bottom: 2rem !important;
       p {
         margin-top: 0rem;
       }
     }
-  }
+  }*/
   .poster1_div {
+    height: 90vh !important;
+    position: relative !important ;
+    margin-top: 4rem !important;
     width: 100% !important;
     .right_side {
       h3 {
@@ -280,7 +376,7 @@
         width: 60%;
         height: 10%;
         font-size: 0.6rem;
-        margin-bottom: 2rem;
+        margin-bottom: 4rem;
         span {
           display: none;
         }
@@ -291,6 +387,9 @@
 
 // Medium devices (tablets, 768px and up)
 @media (max-width: 992px) {
+  body {
+    overflow-x: hidden !important;
+  }
   .domain_div {
     display: none;
   }
@@ -299,14 +398,23 @@
       width: 180vh;
     }
   }
-  .table_div {
+  /* .table_div {
     margin-bottom: 12rem;
-  }
+  }*/
   .poster_content {
     .btn {
       margin-bottom: 4rem;
       span {
         display: none;
+      }
+    }
+  }
+  .poster1_div {
+    height: 70vh;
+    .right_side {
+      .btn {
+        height: min-content;
+        margin-bottom: 2rem;
       }
     }
   }
@@ -326,6 +434,9 @@
 }
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
+  body {
+    overflow-x: hidden !important;
+  }
   .poster_content {
     .btn {
       margin-bottom: 2rem;
