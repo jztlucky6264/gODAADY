@@ -17,7 +17,7 @@
   margin: 2rem 2.5rem;
   .input_width {
     position: relative;
-    width: 100vh;
+    width: 100vw;
   }
 
   .form-control {
@@ -30,6 +30,7 @@
     background-color: #00838c;
     color: white;
     width: 10vw;
+    height: 10vh;
     .search_icon {
       font-size: 2rem;
     }
@@ -88,6 +89,18 @@
     }
   }
 }
+/*.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}*/
 .table_div {
   position: relative;
   margin: 2rem auto;
@@ -161,10 +174,12 @@
 // No media query for `xs` since this is the default in Bootstrap
 @media (max-width: 576px) {
   .input_div {
-    width: 60vh !important;
+    width: 54vh;
+    margin-left: -0.5rem !important;
     .input_width {
-      input {
-        font-size: 1rem !important;
+      .form-control {
+        width: 30vh !important;
+        font-size: 0.8rem !important;
       }
       button {
         width: 10vh;
@@ -177,10 +192,10 @@
     flex-direction: column !important;
     justify-content: center !important;
     align-items: center !important;
-    max-width: 100vw !important;
+    width: 100vw !important;
     img {
-      height: 70%;
-      width: 90%;
+      height: 60%;
+      width: 80%;
       margin-top: 3rem;
       margin-bottom: 3rem;
       margin-left: 1.3rem !important;
@@ -188,7 +203,7 @@
     .right_side {
       text-align: center;
       h3 {
-        font-size: 1.5rem !important;
+        font-size: 1.3rem !important;
       }
       .btn {
         height: 6vh !important;
@@ -209,6 +224,7 @@
   }
   .table_div {
     .row_div {
+      position: relative;
       margin: 0 0.5rem !important;
       .col-3 {
         padding: 1rem auto !important;
@@ -218,6 +234,7 @@
         font-weight: bold;
       }
       .col-lg-2 {
+        position: relative;
         margin-top: 2.7rem !important;
         display: none !important;
       }
@@ -227,6 +244,7 @@
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 768px) {
   .poster_div {
+    width: 100vw;
     flex-direction: column;
     .poster_content {
       h2 {
@@ -245,6 +263,7 @@
       height: 44vh;
     }
     .col-lg-2 {
+      width: 100vw;
       margin-top: 2.7rem;
       p {
         margin-top: 0rem;
@@ -252,6 +271,7 @@
     }
   }
   .poster1_div {
+    width: 100% !important;
     .right_side {
       h3 {
         font-size: 2rem;
